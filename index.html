@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlust - Dream Travel</title>
+  <meta name="description" content="Find your next adventure with Wanderlust. Explore beaches, mountains and vibrant cities.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Wanderlust home"><img src="images/logo.png" alt="Wanderlust" width="149" height="22"></a>
+      <nav class="nav" aria-label="Primary">
+        <a class="is-active" href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a class="nav__cta" href="#destinations">Book Now</a>
+      </nav>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><img src="images/menu.png" alt="" width="23" height="15"></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#destinations">Destinations</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <picture class="hero__bg">
+        <source media="(min-width: 768px)" srcset="images/hero-tablet.png">
+        <img src="images/hero-mobile.png" alt="" width="390" height="780">
+      </picture>
+      <div class="hero__fade"></div>
+      <div class="hero__inner">
+        <h1 class="hero__title">WELCOME TO<br class="only-m"> DREAM TRAVEL</h1>
+        <p class="hero__lead">Find your next adventure here. Explore pristine beaches, towering mountains, and vibrant cities with our curated travel experiences.</p>
+        <a class="btn-book" href="#destinations">
+          <span>Book Now</span>
+          <img src="images/arrow.png" alt="" width="16" height="16">
+        </a>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+      <div class="section-head">
+        <h2 class="section-title">Featured Destinations</h2>
+        <p>Discover our most popular travel spots curated just for you.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__media">
+            <img src="images/maldives.png" alt="Overwater villas over turquoise water in the Maldives">
+            <span class="card__badge">From $1,299</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Maldives</h3>
+            <p class="card__text">Experience ultimate luxury in crystal clear waters and pristine white sand beaches.</p>
+            <a class="card__btn" href="#">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="images/swiss-alps.png" alt="Snow-covered chalet in the Swiss Alps">
+            <span class="card__badge">From $899</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Swiss Alps</h3>
+            <p class="card__text">Hit the slopes or relax in a cozy chalet with breathtaking mountain views.</p>
+            <a class="card__btn" href="#">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="images/safari.png" alt="Elephants on the savanna at sunset">
+            <span class="card__badge">From $2,499</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Safari Adventure</h3>
+            <p class="card__text">Witness extraordinary wildlife in their natural habitat across vast plains.</p>
+            <a class="card__btn" href="#">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="images/tokyo.png" alt="Neon-lit street in Tokyo">
+            <span class="card__badge">From $1,599</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Tokyo City</h3>
+            <p class="card__text">Immerse yourself in a vibrant metropolis blending deep tradition with modern tech.</p>
+            <a class="card__btn" href="#">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__inner">
+        <h2 class="section-title">About Us</h2>
+        <div class="about__card">
+          <div class="about__blob" aria-hidden="true"></div>
+          <p class="about__text">We are a passionate team of travelers dedicated to helping you find the perfect getaway. From sunny beaches to snowy mountains, we handle all the details so you can enjoy the journey. Our mission is to make exploration effortless, providing curated itineraries and seamless booking experiences that let you focus on making memories.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="site-footer__inner">
+      <a class="site-footer__logo" href="#top">Wanderlust</a>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <div class="site-footer__meta">
+        <p class="site-footer__copy">&copy; 2024 Wanderlust Travel Agency. All rights reserved.</p>
+        <a class="site-footer__top" href="#top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 10 10" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V1M1.5 4.5 5 1l3.5 3.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
